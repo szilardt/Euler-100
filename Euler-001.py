@@ -16,7 +16,5 @@ for i in range(0,1000,5):
 
 print(a)    
 print(b)
-<<<<<<< HEAD
-print("Sum is: " + str(a+b))
-=======
-print(a+b)
+
+print("\nSum is: " + str(a+b))
