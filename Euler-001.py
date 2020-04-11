@@ -20,4 +20,3 @@ print(b)
 print("Sum is: " + str(a+b))
 =======
 print(a+b)
->>>>>>> 56174f5d014b83cbfbde269ec8fea37d3e54dba2
