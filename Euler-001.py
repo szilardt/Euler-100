@@ -15,4 +15,4 @@ for i in range(0,1000,5):
 
 print(a)    
 print(b)
-print(a+b)
+print("Sum is: " + str(a+b))
