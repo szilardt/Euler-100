@@ -7,7 +7,9 @@ What is the largest prime factor of the number 600851475143 ?
 import numpy as np
 
 def is_prime(num):
-    
+    i=0
+    max_num=np.floor(np.sqrt(num) + 1)
+    while i< max_num
 
 def find_primes(last_prime=2,to_max):
     upper= np.sqrt(to_max)
