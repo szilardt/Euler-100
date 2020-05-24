@@ -7,7 +7,7 @@ What is the largest prime factor of the number 600851475143 ?
 import numpy as np
 
 num = input("Please enter your number: ")    
-num = int(num)
+num = int(num) # this will block anything which is not integer
 
 while num<2:
     num = input("Please enter your number: ")    
