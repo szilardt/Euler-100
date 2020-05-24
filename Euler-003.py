@@ -7,7 +7,7 @@ What is the largest prime factor of the number 600851475143 ?
 import numpy as np
     
 def is_positive_prime(num):
-    assert 1==num / np.floor(num)
+    assert np.floor(num) == num 
     
     if 2>num : return False
     if 2==num :return True
