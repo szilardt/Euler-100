@@ -47,10 +47,10 @@ for i in range(0,c,b):
 print('\nSum of first set :' + str(a_sum))    
 print('Sum of second set :' + str(b_sum))    
 print('Sum of ' + str(a_sum)+ ' and ' + str(b_sum) + ' is: ' + str(a_sum + b_sum))
-print('Multiples of a are: ')
+print('Multiples of '+ str(a) + ' are: ')
 print(a_list)
 
-print('Multiples of b are: ')
+print('Multiples of ' + str(b) + ' are: ')
 print(b_list)
 
 
