@@ -9,7 +9,7 @@ checkbit1=False
 while False==checkbit1:
     try:    
         a=input('Enter the first positive integer:')
-        a=int(a)
+        a=int(a) #this will raise exception if sth is wrong
         if a>0: checkbit1=True
     except : print('Positive integer please, try again!')
     
@@ -26,12 +26,12 @@ while False==checkbit3:
     try:
         c=input('Enter the limit :')
         c=int(c)
-        assert c>max(a,b)
+        assert c>max(a,b) #this will raise exception if sth is wrong
         checkbit3=True
     except : print('The limit must be an integer which is higher than any of previously entered numbers')
 
 
-a_list=[]
+a_list=[] #we wont need to reorder them and we dont know their length so a list will be good
 b_list=[]
 a_sum=0
 b_sum=0
