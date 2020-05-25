@@ -5,15 +5,53 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 '''
-a=0;
-b=0;
-for i in range(0,1000,3):
-    a +=i
+checkbit1=False
+while False==checkbit1:
+    try:    
+        a=input('Enter the first positive integer:')
+        a=int(a)
+        if a>0: checkbit1=True
+    except : print('Positive integer please, try again!')
+    
+checkbit2=False
+while False==checkbit2:
+    try:
+        b=input('Enter the second number :')
+        b=int(b)
+        if b>0 :checkbit2=True
+    except: print('Positive integer please, try again!')
+    
+checkbit3=False
+while False==checkbit3:
+    try:
+        c=input('Enter the limit :')
+        c=int(c)
+        assert c>max(a,b)
+        checkbit3=True
+    except : print('The limit must be an integer which is higher than any of previously entered numbers')
 
-for i in range(0,1000,5):
-    b +=i
 
-print(a)    
-print(b)
+a_list=[]
+b_list=[]
+a_sum=0
+b_sum=0
 
-print("\nSum is: " + str(a+b))
+for i in range(0,c,a):
+    a_list.append(i)
+    a_sum +=i
+
+for i in range(0,c,b):
+    b_list.append(i)
+    b_sum +=i
+
+print('\nSum of first set :' + str(a_sum))    
+print('Sum of second set :' + str(b_sum))    
+print('Sum of ' + str(a_sum)+ ' and ' + str(b_sum) + ' is: ' + str(a_sum + b_sum))
+print('Multiples of a are: ')
+print(a_list)
+
+print('Multiples of b are: ')
+print(b_list)
+
+
+print("\nTotal sum of a+b is: " + str(a_sum +b_sum))
