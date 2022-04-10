@@ -23,7 +23,6 @@ digits=num.CountDigits()
 print('Number: ' + str(num.get_number()))
 print('Digits: ' + str(num.CountDigits()))
 
-
 #deduct the digits for factors
 
 # checkbit2=False
