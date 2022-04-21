@@ -14,7 +14,6 @@ while num<2:
     num = int(num)
 
 
-
 def is_positive_prime(num):
     
     if 2>num : return False
@@ -32,7 +31,6 @@ def is_positive_prime(num):
 def list_primes(num):
     assert (np.floor(num) == num or 2>num)
     
-    
     primes_list=[]
     factors_list=[]
     
@@ -43,8 +41,7 @@ def list_primes(num):
             if is_positive_prime(i): primes_list.append(i)
             else: factors_list.append(i)
         i+=1            
-    
-    
+        
     if ( len(factors_list)==0 and len(primes_list)==0 ): 
         print('Congrats! You just have found a real prime number!')
         print(str(num)+ ' is prime')
@@ -57,7 +54,6 @@ def list_primes(num):
         print(primes_list)
         print('Non-prime factors of ' + str(num) + ' are:') 
         print(factors_list)
-
 
 list_primes(num)
 
