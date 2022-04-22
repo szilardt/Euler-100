@@ -6,7 +6,6 @@ Created on Wed May 27 16:35:02 2020
 @author: szilard
 """
 
-
 class NUMBER():
     def __init__(self,num):
             self.num=num
